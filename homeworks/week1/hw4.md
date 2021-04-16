@@ -5,7 +5,8 @@
 
 #### 第一步 資料夾擁有 Git 的功能
 `git init`
-*移除 Git 的功能
+
+* 移除 Git 的功能
 `rm -r .git`
 * 查閱版本控制狀態
 `git status`
@@ -22,9 +23,6 @@
 >「版本號」從 `git log` 取得。
 * 回到最新版本
 `git checkout master`
-
-:::info
-**Hine：**
 * 修改 commit message
 `git commit --amend`
 * 刪除最新版本 commit
@@ -32,4 +30,3 @@
 `git reset HEAD^ --hard`
     2. 將最新的commit移除，但保留已修改的檔案。
 `git reset HEAD^ --soft`
-:::
