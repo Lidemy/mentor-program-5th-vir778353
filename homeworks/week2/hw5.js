@@ -1,10 +1,11 @@
 function join(arr, concatStr) {
     var joinStr= "";
     for(var i=0; i< arr.length; i++){
-        if(i== (arr.length-1))
-            joinStr= joinStr+ arr[i];
-        else
-            joinStr= joinStr+ arr[i]+ concatStr;
+        i=== (arr.length-1) ? joinStr+= arr[i] : joinStr+= arr[i]+ concatStr
+        // if(i=== (arr.length-1))
+        //     joinStr= joinStr+ arr[i];
+        // else
+        //     joinStr= joinStr+ arr[i]+ concatStr;
     }
     return joinStr;
 }

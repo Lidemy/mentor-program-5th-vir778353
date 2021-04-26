@@ -10,15 +10,15 @@ function search(array, n){
         }else if(n < array[M]){
             R= M- 1
         }else
-            return n
+            return M
         M=  Math.floor((L+R)/2)
     }
     for(var i= L; i<= R; i++){
-        if(array[i]== n)
-            return n
+        if(array[i]=== n)
+            return i
         else 
             return -1 
     }
 }
-
+console.log(search([1, 3, 10, 14, 39], 14))
 console.log(search([1, 3, 10, 14, 39], 299))
