@@ -6,12 +6,20 @@ const rl = readline.createInterface({
 
 const lines = []
 
-rl.on('line', function(line) {
-  lines.push(this.line)
+// rl.on('line', function(line) {
+//   lines.push(line)
+// })
+
+rl.on('line', (line) => {
+  lines.push(line)
 })
 
-rl.on('close', function() {
-  solve(this.lines)
+// rl.on('close', function() {
+//   solve(lines)
+// })
+
+rl.on('close', () => {
+  solve(lines)
 })
 
 function solve(lines) {
