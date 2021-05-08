@@ -19,7 +19,7 @@ function solve(lines) {
     const temp = lines[i].split(' ')
     const strA = temp[0]
     const strB = temp[1]
-    let result = ''
+    let result = 'DRAW'
     if (strA.length !== strB.length) {
       (strA.length > strB.length) ? result = 'A' : result = 'B'
     } else if (strA.length === strB.length) {
@@ -30,11 +30,12 @@ function solve(lines) {
         } else if (Number(strA[j]) < Number(strB[j])) {
           result = 'B'
           break
-        } else {
-          if (j === (strA.length - 1)) {
-            result = 'DRAW'
-          }
         }
+        // else {
+        //   if (j === (strA.length - 1)) {
+        //     result = 'DRAW'
+        //   }
+        // }
       }
     }
     if (Number(temp[2]) > 0) {

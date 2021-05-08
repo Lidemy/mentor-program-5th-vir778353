@@ -16,12 +16,14 @@ rl.on('close', () => {
 
 function solve(lines) {
   for (let i = 1; i <= Number(lines[0]); i++) {
-    isPrime(Number(lines[i])) ? console.log('Prime') : console.log('Composite')
+    // isPrime(Number(lines[i])) ? console.log('Prime') : console.log('Composite')
+    console.log(isPrime(Number(lines[i])) ? 'Prime' : 'Composite')
   }
 }
 
 function isPrime(number) {
-  const endNumber = parseInt(number / 2)
+  // const endNumber = parseInt(number / 2)
+  const endNumber = Math.sqrt(number)
   if (number === 1) {
     return false
   } else if (number < 4) {
@@ -32,8 +34,9 @@ function isPrime(number) {
     if ((number % i) === 0) {
       return false
     }
-    if (i === endNumber) {
-      return true
-    }
+    // if (i === endNumber) {
+    //   return true
+    // }
   }
+  return true
 }
