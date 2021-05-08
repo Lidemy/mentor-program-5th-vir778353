@@ -1,4 +1,4 @@
-import * as request from 'request'
+const request = require('request')
 
 request(
   'https://lidemy-book-store.herokuapp.com/books?_limit=10',
