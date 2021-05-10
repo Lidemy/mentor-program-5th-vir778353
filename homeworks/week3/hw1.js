@@ -24,11 +24,14 @@ rl.on('close', () => {
 
 function solve(lines) {
   const number = Number(lines[0])
-  for (let i = 0; i < number; i++) {
-    let star = ''
-    for (let j = 0; j <= i; j++) {
-      star += '*'
-    }
-    console.log(star)
+  for (let i = 1; i <= number; i++) {
+    console.log('*'.repeat(i))
   }
+  // for (let i = 0; i < number; i++) {
+  //   let star = ''
+  //   for (let j = 0; j <= i; j++) {
+  //     star += '*'
+  //   }
+  //   console.log(star)
+  // }
 }

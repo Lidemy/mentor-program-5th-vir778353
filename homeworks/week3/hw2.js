@@ -27,9 +27,10 @@ function solve(lines) {
     if (i < 10) {
       console.log(i)
     } else {
-      while (parseInt(number / 10) > 0) {
+      // while (parseInt(number / 10) > 0) {
+      while (Math.floor(number / 10) > 0) {
         digit.push(number % 10)
-        number = parseInt(number / 10)
+        number = Math.floor(number / 10)
         if (number < 10) {
           digit.push(number % 10)
         }
